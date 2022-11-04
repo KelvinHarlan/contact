@@ -1,0 +1,110 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color:#7f00b2;
+    color: #fff;
+    margin: 0;
+    padding: 5px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 9768px) {
+
+    /*Start mobile*/
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 90vh;
+    }
+
+    .user {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10vh;
+        font-size: 1rem;
+    }
+
+    .myPhoto {
+        margin-top: 5vh;
+        width: 25%;
+        height: 25%;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        margin-bottom: 1vh;
+
+    }
+
+    .user-title {
+        margin: 0;
+        text-align: center;
+    }
+
+    .user-text {
+        color: #fff;
+        text-align: center;
+        
+    }
+
+    .box-main{
+        margin-top: auto;
+    }
+
+    .contacts{
+        width: 25vw;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .github img{
+        max-width: 5vw;
+        padding: .5rem;
+        border: 1px solid #fff;
+        border-radius: .5rem;
+        background-color: #fff;
+    }
+
+    .linkedin img{
+        max-width: 5vw;
+        padding: .5rem;
+        border: 1px solid #fff;
+        border-radius: .5rem;
+        background-color: #fff;
+    }
+
+    .contacts img:hover{
+        background-color: transparent;
+
+        transition: 1s;
+    }
+
+    
+
+
+
+
+
+
+
+
+    footer{
+       
+        text-align: center;
+        border-top: 1px solid #fff;
+        margin-top: auto;
+        padding: 10px 5px;
+       
+    }
+} /*End mobile*/
+
+/*
+@media (min-width: 769px) {
+
+}
+
+*/
