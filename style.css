@@ -11,7 +11,7 @@ body {
     flex-direction: column;
 }
 
-@media (max-width: 9768px) {
+@media (max-width: 768px) {
 
     /*Start mobile*/
     .container {
