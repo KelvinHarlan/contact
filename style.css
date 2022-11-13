@@ -233,9 +233,237 @@ body {
     }
 } /*End mobile*/
 
-/*
+
+
 @media (min-width: 769px) {
 
-}
+    .navbar{
+        display: flex;
+        justify-content: end;
+        font-size: 2rem;
+        margin: .5rem;
+        padding: .5rem;
+    }
 
-*/
+    /*Start desktop*/
+
+    .navbar{
+        background-color: #4c007d;
+        border-radius: .5rem;
+        padding: .5rem;
+        padding-right: 2vw;
+        
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        min-height: 90vh;
+    }
+
+    .user {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 1rem;
+        width: 30%;
+        margin-right: 10%;
+        border-right: 1px solid;
+        height: 100%;
+    }
+
+    .myPhoto {
+        margin-top: 5vh;
+        width: 25%;
+        height: 25%;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        margin-bottom: 1vh;
+
+    }
+
+    .user-title {
+        margin: 0;
+        text-align: center;
+    }
+
+    .user-text {
+        color: #fff;
+        text-align: center;
+        
+    }
+
+
+    .box-main{
+        margin-top: auto;
+    }
+
+    .contacts{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 0 20vh 0;
+
+    }
+
+    .github img{
+        max-width: 2rem;
+        padding: .5rem;
+        border: 1px solid #fff;
+        border-radius: .5rem;
+        background-color: #fff;
+        margin-right: 1rem;
+    }
+
+    .linkedin img{
+        max-width: 2rem;
+        padding: .5rem;
+        border: 1px solid #fff;
+        border-radius: .5rem;
+        background-color: #fff;
+    }
+
+    .contacts img:hover{
+        background-color: transparent;
+        transition: 1s;
+    }
+
+    .box-cards{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        border-radius: .5rem;
+        margin-bottom: 10vh;
+    }
+
+    .img-project img{
+        width: 100%;
+        margin: auto;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        border-radius: .5rem;
+        background-color: #4c007d;
+        box-shadow: 0px 0px 5px #00000080;
+    }
+
+
+    .card label{
+        padding: .5rem;
+        border-radius: .5rem .5rem 0 0;
+        background-color: #4c007d;
+    }
+
+    .box-info{
+        text-align:right;
+        margin: .5rem .5rem .5rem auto;
+    }
+
+    .box-info a{
+        color: #fff;
+        padding: .3rem;
+    }
+
+
+    .box-face{
+        perspective: 700px;
+        width: 20rem;
+        min-height: 200px;
+        max-width: 300px;
+        margin-bottom: 1.5rem;
+        
+        
+    }
+
+    .front, .back{
+        position:absolute;
+        transition: 1s;
+    }
+
+    .front{
+        z-index: 1;
+    }
+
+    .back{
+        transform: rotateY(-180deg);
+        backface-visibility: hidden;
+        overflow-y: auto;
+        min-width:100%;
+        min-height: 105%;
+      
+        
+    }
+    
+
+    .box-face:hover .front{
+        transform: rotateY(180deg);
+        z-index: 0;
+        
+    }
+    
+    .box-face:hover .back{
+        transform: rotateY(0);
+        z-index: 1;
+        
+    }
+
+    .text-info{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 50%;
+        margin: 1rem;
+       
+        
+    }
+
+    .box-logos{
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+
+
+    }
+    .img-logo{
+        max-width: 40px;
+        margin: .5rem;
+    }
+    
+    .logo{
+        display: flex;
+        box-shadow: 0px 0px 5px #ffffffcc;
+        border-radius: .5rem;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        margin: 1rem;
+        
+    }
+    .logo label{
+        margin: 0;
+        margin-top: .5rem;
+        padding: 0;
+        text-align: center;
+        font-size: .7rem;
+    }
+
+
+
+
+
+
+
+
+    footer{
+       
+        text-align: center;
+        border-top: 1px solid #fff;
+        margin-top: auto;
+        padding: 10px 5px;
+        font-size: .6rem;
+       
+    }
+
+}
